@@ -1,1 +1,7 @@
 MoveZeroes
+
+# C++ compiled files
+bin/
+build/
+*.o
+*.out
