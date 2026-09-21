@@ -3,11 +3,12 @@
 using namespace std;
 //continous part of an array is known as subArray
 void PrintSubArr(int nums[],int n){
-    for(int i = 0;i<n;i++){
-        // cout<<"("<<nums[i]<<") ";
-        for(int j=i;j<n;j++){
-            // cout<<"("<<nums[i]<<","<<nums[j]<<") ";
-             for (int k = i;k<=j;k++ ){
+    // This loops decides the starting point
+    for(int start = 0;start<n;start++){
+    // this loop decide the ending point
+        for(int end=start;end<n;end++){
+            // this loop  actually traverse/print
+             for (int k = start;k<=end;k++ ){
                 cout<<nums[k];
              }
              cout<<" ,";
