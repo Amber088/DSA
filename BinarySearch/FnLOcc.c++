@@ -31,7 +31,7 @@ int LastOcc(int arr[],int n ,int key){
     while(start<=end){
         if(arr[mid]==key){
            end = mid;
-           end = mid-1;
+           start = mid+1;
         }
         if(key>arr[mid]){
             start = mid+1;
